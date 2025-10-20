@@ -1,7 +1,7 @@
 import telebot
 import requests
 from bs4 import BeautifulSoup
-
+import os
 # 🔑 Токен твоего бота
 BOT_TOKEN = os.getenv("BOT_TOKEN")
 bot = telebot.TeleBot(BOT_TOKEN)
