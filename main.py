@@ -4,7 +4,7 @@ from bs4 import BeautifulSoup
 import os
 # 🔑 Токен твоего бота
 BOT_TOKEN = os.getenv("BOT_TOKEN")
-bot = telebot.TeleBot(BOT_TOKEN)
+
 
 # 🔗 URL страницы с расписанием
 URL = "https://nf.uust.ru/timetable/fulltime/files/(3)-20.10.25-25.10.25-PI.,-TMO.,-El.-ZO.html"
