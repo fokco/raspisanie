@@ -3,8 +3,10 @@ import os
 import requests
 from bs4 import BeautifulSoup
 
-# 🔑 Токен твоего бота
 BOT_TOKEN = os.getenv("BOT_TOKEN")
+if not BOT_TOKEN:
+    raise ValueError("⚠️ BOT_TOKEN не задан. Проверь переменные окружения!")
+
 bot = telebot.TeleBot(BOT_TOKEN)
 
 # 🔗 URL страницы с расписанием
