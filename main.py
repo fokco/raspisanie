@@ -3,7 +3,7 @@ import os
 import requests
 from bs4 import BeautifulSoup
 
-BOT_TOKEN = "8261857899:AAGjAUiefTEw2MTyyVGNJYjaWvkCCaUghJs"
+BOT_TOKEN = os.getenv("BOT_TOKEN")
 bot = telebot.TeleBot(BOT_TOKEN)
 
 # 🔗 URL страницы с расписанием
